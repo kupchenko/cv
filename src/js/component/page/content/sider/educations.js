@@ -19,6 +19,7 @@ class Education extends PureComponent {
         )
     }
 }
+
 const mapStateToProps = (state) => ({
     education: state.cvData.data.education
 });

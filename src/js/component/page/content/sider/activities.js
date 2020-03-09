@@ -13,6 +13,7 @@ class Activities extends PureComponent {
         )
     }
 }
+
 const mapStateToProps = (state) => ({
     activities: state.cvData.data.activities
 });

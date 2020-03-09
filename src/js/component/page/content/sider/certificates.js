@@ -15,6 +15,7 @@ class Certificates extends PureComponent {
         )
     }
 }
+
 const mapStateToProps = (state) => ({
     certificates: state.cvData.data.certificates
 });
