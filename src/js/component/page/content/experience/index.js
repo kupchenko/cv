@@ -1,7 +1,7 @@
 import React from 'react';
 import {List} from 'antd';
-import ExperienceRow from '@/js/component/page/content/experience/row';
 import {connect} from 'react-redux';
+import ExperienceRow from "@/js/component/page/content/experience/row";
 
 class Experience extends React.Component {
 
@@ -17,7 +17,9 @@ class Experience extends React.Component {
                 }}
                 dataSource={projects}
                 renderItem={project => (
-                    <ExperienceRow project={project}/>
+                    <div>
+                        <ExperienceRow key={project.id} project={project}/>
+                    </div>
                 )}
             />
         )

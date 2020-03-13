@@ -13,7 +13,7 @@ const tabList = [
     {
         key: 'tech',
         tab: 'Tech stack',
-    },
+    }
 ];
 
 class ExperienceRow extends React.Component {
@@ -21,7 +21,6 @@ class ExperienceRow extends React.Component {
     state = {
         key: 'desc'
     };
-
 
     onTabChange = (key, type) => {
         this.setState({[type]: key});
