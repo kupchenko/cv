@@ -22,12 +22,13 @@ class ExperienceRow extends React.Component {
         key: 'desc'
     };
 
+
     onTabChange = (key, type) => {
         this.setState({[type]: key});
     };
 
     render() {
-        const {id, title, position, description, startDate, endDate, company, tasks, technologies, benefits} = this.props.project;
+        const {title, position, description, startDate, endDate, company, tasks, technologies, benefits} = this.props.project;
         const contentList = {
             tasks: <ul className='circle-list'>{tasks.map(task => <li key={task}>{task}</li>)}</ul>,
             tech: technologies.join(', '),
@@ -40,7 +41,6 @@ class ExperienceRow extends React.Component {
                 extra={<div className='extra-row'>{startDate} - {endDate}<br/>{company}</div>}
                 tabList={tabList}
                 className='experience-row'
-                key={id}
                 activeTabKey={this.state.key}
                 onTabChange={key => {
                     this.onTabChange(key, 'key');
