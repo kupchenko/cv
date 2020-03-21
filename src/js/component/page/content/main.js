@@ -2,8 +2,9 @@ import React, {PureComponent} from 'react';
 import {Divider} from 'antd';
 import Experience from '@/js/component/page/content/experience';
 import Summary from '@/js/component/page/content/summary';
+import CV from '@/files/cv.pdf';
 import {connect} from 'react-redux';
-import CloudDownloadOutlined from "@ant-design/icons/lib/icons/CloudDownloadOutlined";
+import CloudDownloadOutlined from '@ant-design/icons/lib/icons/CloudDownloadOutlined';
 
 class MainContent extends PureComponent {
 
@@ -15,10 +16,9 @@ class MainContent extends PureComponent {
             <>
                 <div className='cv-name-header-row'>
                     <div className='employee-name'>{name}</div>
-                    <a className='cv-download-link'
-                       href='../../../../files/cv.pdf'
-                       download={this.cvFileName}><CloudDownloadOutlined/> Download
-                        CV</a>
+                    <a className='cv-download-link' href={CV} download={this.cvFileName}>
+                        <CloudDownloadOutlined className="cv-download-icon"/> Download CV
+                    </a>
 
                 </div>
                 <div className='employee-title'>{title}</div>

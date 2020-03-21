@@ -69,4 +69,9 @@
 .cv-download-link {
     padding-right: 10px;
     padding-top: 10px;
+    font-size: 15px;
+}
+
+.cv-download-icon {
+    font-size: 20px;
 }

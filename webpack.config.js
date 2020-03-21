@@ -72,6 +72,13 @@ module.exports = {
                         }
                     },
                     'css-loader']
+            },
+            {
+                test: /\.(png|jpe?g|gif|pdf)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                },
             }
         ]
     },
