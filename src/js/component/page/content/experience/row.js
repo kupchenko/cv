@@ -19,7 +19,7 @@ const tabList = [
 class ExperienceRow extends React.Component {
 
     state = {
-        key: 'desc',
+        key: 'desc'
     };
 
     onTabChange = (key, type) => {
@@ -32,7 +32,7 @@ class ExperienceRow extends React.Component {
         const contentList = {
             tasks: <ul className='circle-list'>{tasks.map(task => <li key={task}>{task}</li>)}</ul>,
             tech: technologies.join(', '),
-            description: <div>{description}<br/>{benefits}</div>,
+            desc: <div>{description}<br/>{benefits}</div>,
         };
         return (
             <Card
