@@ -1,0 +1,1 @@
+export const CV_PDF_FILE_NAME = 'CV_Dmitrii_Kupchenko_Senior_Java_Software_Engineer.pdf';

@@ -5,10 +5,9 @@ import Summary from '@/js/component/page/content/summary';
 import CV from '@/files/cv.pdf';
 import {connect} from 'react-redux';
 import CloudDownloadOutlined from '@ant-design/icons/lib/icons/CloudDownloadOutlined';
+import {CV_PDF_FILE_NAME} from "@/js/util/constants";
 
 class MainContent extends PureComponent {
-
-    cvFileName = 'CV_Dmitrii_Kupchenko_Senior_Java_Software_Engineer.pdf';
 
     render() {
         const {name, title} = this.props;
@@ -16,10 +15,9 @@ class MainContent extends PureComponent {
             <>
                 <div className='cv-name-header-row'>
                     <div className='employee-name'>{name}</div>
-                    <a className='cv-download-link' href={CV} download={this.cvFileName}>
+                    <a className='cv-download-link' href={CV} download={CV_PDF_FILE_NAME}>
                         <CloudDownloadOutlined className="cv-download-icon"/> Download CV
                     </a>
-
                 </div>
                 <div className='employee-title'>{title}</div>
 
