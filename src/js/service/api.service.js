@@ -78,6 +78,7 @@ const data = {
     ],
     projects: [
         {
+            id: 0,
             startDate: '09.2019',
             endDate: 'Now',
             company: 'Luxoft',
@@ -105,6 +106,7 @@ const data = {
                 'JUnit', 'Mockito', 'Gradle', 'Git', 'Kafka', 'Hadoop', 'Spark', 'Cassandra', 'MySQL']
         },
         {
+            id: 1,
             startDate: '01.2019',
             endDate: '09.2019',
             company: 'SoftServe',
@@ -126,6 +128,7 @@ const data = {
             technologies: ['Java 8', 'Spring Boot', 'Spring WebFlux', 'LDAP (Active Directory)', 'Docker', 'JUnit', 'Mockito', 'Cucumber', 'Bamboo', 'LaunchDarkly', 'SignalFx', 'Maven', 'Git', 'SourceClear', 'AWS SQS']
         },
         {
+            id: 2,
             startDate: '09.2018',
             endDate: '12.2018',
             company: 'SoftServe',
@@ -145,6 +148,7 @@ const data = {
             technologies: ['Java 8', 'LDAP (Active Directory)', 'Spring', 'JUnit', 'Mockito', 'Bamboo', 'LaunchDarkly', 'DataDog', 'Maven', 'Git', 'AWS SQS']
         },
         {
+            id: 3,
             startDate: '03.2018',
             endDate: '08.2018',
             company: 'EPAM',
@@ -162,6 +166,7 @@ const data = {
             technologies: ['Java 8', 'Spring Boot', 'Spring MVC', 'JUnit', 'Mockito', 'Liquibase', 'Oracle DB', 'AspectJ', 'Jenkins', 'Maven', 'SVN', 'Git']
         },
         {
+            id: 4,
             startDate: '06.2017',
             endDate: '02.2018',
             company: 'EPAM',
@@ -180,6 +185,7 @@ const data = {
             technologies: ['Java 7', 'Java 8', 'ATG Oracle Ecommerce', 'JAX-RS', 'JUnit', 'Mockito', 'Liquibase', 'Oracle DB', 'AspectJ', 'Jenkins', 'Maven', 'SVN', 'Git.']
         },
         {
+            id: 5,
             startDate: '11.2016',
             endDate: '02.2018',
             company: 'EPAM',

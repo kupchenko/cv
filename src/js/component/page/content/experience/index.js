@@ -13,21 +13,11 @@ class Experience extends React.Component {
                 itemLayout='vertical'
                 size='large'
                 pagination={{
-                    onChange: page => {
-                        console.log(page);
-                    },
                     pageSize: 3,
                 }}
                 dataSource={projects}
                 renderItem={project => (
-                    <List.Item key={project.title}>
-                        {/*<List.Item.Meta*/}
-                        {/*    title={`${project.title}, ${project.position}, ${project.startDate} - ${project.endDate} (${project.duration})`}*/}
-                        {/*    description={project.description}*/}
-                        {/*/>*/}
-                        {/*{project.benefits}*/}
-                        <ExperienceRow project={project}/>
-                    </List.Item>
+                    <ExperienceRow project={project}/>
                 )}
             />
         )
