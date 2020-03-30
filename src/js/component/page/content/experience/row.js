@@ -38,8 +38,8 @@ class ExperienceRow extends React.Component {
         return (
             <Card
                 style={{width: '100%'}}
-                title={<div><em>{title}</em> in <em>{company}</em> as <em>{position}</em></div>}
-                extra={`${startDate} - ${endDate}`}
+                title={<><em>{position}</em> <br/> <em>"{title}"</em></>}
+                extra={<div className='extra-row'>{startDate} - {endDate}<br/>{company}</div>}
                 tabList={tabList}
                 activeTabKey={this.state.key}
                 onTabChange={key => {
