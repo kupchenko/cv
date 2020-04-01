@@ -3,7 +3,7 @@ import React from 'react';
 const data = {
     name: 'Dmitrii Kupchenko',
     title: 'Senior Software Engineer',
-    avatar: '/src/img/avatar.jpg',
+    avatar: '/avatars/avatar.jpg',
     competencies: [
         {
             id: 1,
@@ -36,7 +36,7 @@ const data = {
     certificates: [
         {
             id: 0,
-            name: 'Java SE 8 Programmer I (1Z0-808) – Oracle',
+            name: 'Java SE 8 Programmer I (1Z0-808) - Oracle',
             issueDate: '21.05.2019'
         }
     ],
@@ -45,14 +45,14 @@ const data = {
             id: 0,
             university: 'NURE',
             specialization: 'Computer science',
-            degree: 'Bachelor’s Degree in “Information Technology”',
+            degree: `Bachelor's Degree in "Information Technology"`,
             startYear: '2013',
             endYear: '2017'
         }, {
             id: 1,
             university: 'NURE',
             specialization: 'Computer science',
-            degree: 'Master’s Degree in “System Engineering”',
+            degree: `Master's Degree in "System Engineering"`,
             startYear: '2017',
             endYear: '2019'
         }
@@ -60,7 +60,7 @@ const data = {
     activities: [
         {
             id: 0,
-            name: 'Lecturer in Hillel IT School, 2019(March) – 2020(February), Course: “Java Enterprise”'
+            name: 'Lecturer in Hillel IT School, 2019(March) - 2020(February), Course: "Java Enterprise"'
         }
     ],
     summaryText: '',
@@ -110,7 +110,7 @@ const data = {
             company: 'SoftServe',
             position: 'Software Engineer',
             title: 'Consent check',
-            description: 'The service checks user’s consent for viewing and using his personal information. The decision is made on the basis of analytics from various data sources.',
+            description: `The service checks user's consent for viewing and using his personal information. The decision is made on the basis of analytics from various data sources.`,
             benefits: 'The service acts like a proxy between user and data. Service limits access to user information. So, there is no way to view customer data without explicit or implicit consent. This greatly improves security.',
             tasks: [
                 'Implementing request processing mechanism using Spring WebFlux;',
@@ -185,8 +185,8 @@ const data = {
             company: 'EPAM',
             position: 'Software Engineer',
             title: 'Office Space Management Tool',
-            description: 'Office Space Management Tool is used for tracking workplace distribution between company offices, employee’s allocation management. Storing Visio schemes with office plans.',
-            benefits: 'Easy to track workplace distribution and employee’s allocation.',
+            description: `Office Space Management Tool is used for tracking workplace distribution between company offices, employee's allocation management. Storing Visio schemes with office plans.`,
+            benefits: `Easy to track workplace distribution and employee's allocation.`,
             tasks: [
                 'Developed service to keep both legacy Oracle DB and PostgreSQL synchronized, so that old services can work with the legacy DB;',
                 'Covering synchronization functionality with Unit tests;',

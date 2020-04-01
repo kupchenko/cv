@@ -2,13 +2,14 @@ import React, {PureComponent} from 'react';
 import {Card, Layout} from 'antd';
 import CardContent from '@/js/component/page/content/sider/card-content';
 import {connect} from 'react-redux';
+import DefaultAvatar from '@/img/blank_avatar.png'
 
 const {Sider} = Layout;
 
 class PageSider extends PureComponent {
 
     render() {
-        const avatarUrl = (this.props.isLoading) ? '/src/img/blank_avatar.png' : this.props.data.avatar;
+        const avatarUrl = (this.props.isLoading) ? DefaultAvatar : this.props.data.avatar;
         return (
             <Sider className='default-layout-background' width={300}>
                 <Card

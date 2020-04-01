@@ -74,10 +74,10 @@ module.exports = {
                     'css-loader']
             },
             {
-                test: /\.(png|jpe?g|gif|pdf)$/i,
+                test: /\.(png|pdf)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]',
+                    name: 'files/[name].[ext]',
                 },
             }
         ]
@@ -93,7 +93,11 @@ module.exports = {
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, 'src/img/favicon.ico'),
-                to: path.resolve(__dirname, outputFolder + '/img')
+                to: path.resolve(__dirname, outputFolder)
+            },
+            {
+                from: path.resolve(__dirname, 'src/avatars'),
+                to: path.resolve(__dirname, outputFolder + '/avatars')
             }
         ]),
         new MiniCssExtractPlugin({
