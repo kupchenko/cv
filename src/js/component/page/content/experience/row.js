@@ -3,7 +3,7 @@ import {Card} from 'antd';
 
 const tabList = [
     {
-        key: 'description',
+        key: 'desc',
         tab: 'Description',
     },
     {
@@ -19,8 +19,7 @@ const tabList = [
 class ExperienceRow extends React.Component {
 
     state = {
-        key: 'description',
-        noTitleKey: 'app',
+        key: 'desc',
     };
 
     onTabChange = (key, type) => {
