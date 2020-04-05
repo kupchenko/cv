@@ -1,3 +1,11 @@
-.site-layout-background {
+.default-layout-background {
     background: #f0f2f5;
+}
+
+.site-layout-background {
+    background: #fff;
+}
+
+.ant-card-body {
+    padding: 0;
 }

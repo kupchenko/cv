@@ -11,16 +11,11 @@ class PageHeader extends PureComponent {
         const {Header} = Layout;
         return (
             <Header className="header">
+                <div className="logo"/>
                 <Menu
                     theme="dark"
                     mode="horizontal"
-                    style={{
-                        lineHeight: '64px',
-                    }}
-                    selectable={false}
-
                 >
-
                 </Menu>
             </Header>
         )
