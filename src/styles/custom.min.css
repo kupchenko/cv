@@ -7,5 +7,32 @@
 }
 
 .ant-card-body {
-    padding: 0;
+    padding: 0 25px;
+}
+
+.list-titles {
+    float: left;
+    text-align: left;
+    font-weight: 600;
+    width: 15%;
+}
+
+.list-content {
+    float: left;
+    width: 85%;
+    text-align: left;
+    font-weight: 300;
+}
+
+.card-width {
+    width: '25%';
+    textAlign: 'center';
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.skills-list {
+    list-style: circle outside;
 }
