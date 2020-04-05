@@ -24,15 +24,14 @@
     font-weight: 300;
 }
 
-.card-width {
-    width: '25%';
-    textAlign: 'center';
-}
-
 .contacts-list {
     list-style: none;
 }
 
 .skills-list {
     list-style: circle outside;
+}
+
+.employee-name {
+    text-align: 'center';
 }
