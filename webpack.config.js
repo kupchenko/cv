@@ -29,7 +29,7 @@ const optimization = () => {
 };
 
 module.exports = {
-    entry: './js/experience.js',
+    entry: './js/index.js',
     context: path.resolve(__dirname, "src"),
     output: {
         path: path.resolve(__dirname, outputFolder),
@@ -77,7 +77,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './experience.html',
+            template: './index.html',
             minify: {
                 collapseWhitespace: isProd()
             }

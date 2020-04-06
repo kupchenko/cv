@@ -16,7 +16,7 @@ class PageContent extends PureComponent {
                     <Content className="site-layout-background" style={{marginLeft: '10px', minHeight: 1000}}>
 
                         <h1 className="employee-name">Dmitrii Kupchenko</h1>
-                        <h2 className="employee-name">Senior Software Engineer</h2>
+                        <h1 className="employee-title">Senior Software Engineer</h1>
 
                         <Divider orientation="left">Summary</Divider>
                         <Summary/>
