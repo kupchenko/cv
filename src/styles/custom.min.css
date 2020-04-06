@@ -43,3 +43,7 @@
     font-size: 26px;
     color: dimgray;
 }
+
+.ant-tabs .ant-tabs-large-bar .ant-tabs-tab {
+    padding: 5px 0;
+}
