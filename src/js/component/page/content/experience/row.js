@@ -29,28 +29,28 @@ class ExperienceRow extends React.Component {
     };
 
     render() {
-        const {title, position, description, startDate, endDate, duration, company, contribution, tasks, technologies, benefits} = this.props.project;
+        const {title, position, description, startDate, endDate, company, tasks, technologies, benefits} = this.props.project;
         const contentList = {
-            tasks: <p>
-                <ul>{tasks.map(task => <li>{task}</li>)}</ul>
-            </p>,
-            tech: <p>{technologies.join(', ')}</p>,
-            description: <p>{description}<br/>{benefits}</p>,
+            tasks: <ul className="circle-list">{tasks.map(task => <li>{task}</li>)}</ul>,
+            tech: technologies.join(', '),
+            description: <div>{description}<br/>{benefits}</div>,
         };
         return (
             <Card
                 style={{width: '100%'}}
-                title={`${title}, ${company}, ${position}, ${startDate} - ${endDate} (${duration})`}
+                title={<div><em>{title}</em> in <em>{company}</em> as <em>{position}</em></div>}
+                extra={`${startDate} - ${endDate}`}
                 tabList={tabList}
                 activeTabKey={this.state.key}
                 onTabChange={key => {
                     this.onTabChange(key, 'key');
                 }}
             >
-                {contentList[this.state.key]}
+                <div style={{padding: '10px 0px'}}>
+                    {contentList[this.state.key]}
+                </div>
             </Card>
         )
-            ;
     }
 }
 

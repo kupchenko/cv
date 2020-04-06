@@ -14,7 +14,7 @@ class PageSider extends PureComponent {
             <Sider className="default-layout-background" width={300}>
                 <Card
                     hoverable
-                    style={{width: 300}}
+                    style={{width: 300, padding: '0 0 15px 0'}}
                     cover={<img src="/src/img/profile.jpg" alt="avatar"/>}
                 >
                     <Divider orientation="center">Core competencies</Divider>

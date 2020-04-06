@@ -28,8 +28,8 @@
     list-style: none;
 }
 
-.skills-list {
-    list-style: circle outside;
+.circle-list {
+    list-style: disc outside;
 }
 
 .employee-name {
@@ -46,4 +46,9 @@
 
 .ant-tabs .ant-tabs-large-bar .ant-tabs-tab {
     padding: 5px 0;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
 }
