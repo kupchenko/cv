@@ -1,5 +1,6 @@
 import React from "react";
 import {Empty, List} from "antd";
+import ExperienceRow from "@/js/component/page/content/experience/row";
 
 const projects = [];
 for (let i = 0; i < 23; i++) {
@@ -9,18 +10,27 @@ for (let i = 0; i < 23; i++) {
         duration: '2 years',
         company: 'Luxoft',
         position: 'Senior Software Engineer',
-        title: 'Sports Data Warehouse',
-        description: 'The system aims to store data about different events, participants and process this data. The system acts as a golden source of data. Data can be provided to different customers.',
-        benefits: 'The system from one side collects information received from vendors and from the other side\n' +
-            'system managers correct data and these vendors can then fetch data with corrections. System\n' +
-            'provides deduplication mechanism which helps to merge similar records received from\n' +
+        title: 'Data Warehouse',
+        description: 'The system aims to store data about different events, participants. The system acts as a golden source of data. Data can be provided to different customers.',
+        benefits: 'The system from one side collects information received from vendors and from the other side' +
+            'system managers correct data and these vendors can then fetch data with corrections. System' +
+            'provides deduplication mechanism which helps to merge similar records received from' +
             'different vendors and by merging these records collect as much data as possible.',
         tasks: [
+            'Designed security model;',
+            'Analyzing and creating technical debt tasks;',
+            'Setting up Zipkin and Jaeger;',
+            'Configuring Sonar, Checkstyler;',
+            'Refactoring services and improving stability;',
+            'Setting up logging environment for services, configuring Kibana.',
+            'Designed and implemented custom Сassandra versioning (tables, indexes);',
+            'Configuring Solr indexes;',
+            'Implementing Spark processing jobs;',
             'Implemented Kafka listeners and publishers;',
-            'Configuring structure in Сassandra (keyspaces, tables, indexes);',
-            'Dealing with different Solr issues (like indexing fields with type map, DynamicField etc);'
+            'Creating REST endpoints;'
         ],
-
+        technologies: ["Java 8", "Spring Boot", "Spring MVC", "Spring Data", "Docker", "Kubernetes", "Kafka",
+            "JUnit", "Mockito", "Gradle", "Git", "Kafka", "Hadoop", "Spark", "Cassandra", "MySQL"]
     });
 }
 
@@ -33,7 +43,7 @@ class Experience extends React.Component {
         }
         return (
             <List
-                style={{padding: '0 24px'}}
+                style={{padding: '0 25px 24px'}}
                 itemLayout="vertical"
                 size="large"
                 pagination={{
@@ -43,13 +53,14 @@ class Experience extends React.Component {
                     pageSize: 3,
                 }}
                 dataSource={projects}
-                renderItem={item => (
-                    <List.Item key={item.title}>
-                        <List.Item.Meta
-                            title={`${item.startDate} - ${item.endDate} (${item.duration}), ${item.title}`}
-                            description={item.description}
-                        />
-                        {item.content}
+                renderItem={project => (
+                    <List.Item key={project.title}>
+                        {/*<List.Item.Meta*/}
+                        {/*    title={`${item.title}, ${item.position}, ${item.startDate} - ${item.endDate} (${item.duration})`}*/}
+                        {/*    description={item.description}*/}
+                        {/*/>*/}
+                        {/*{item.benefits}*/}
+                        <ExperienceRow project={project}/>
                     </List.Item>
                 )}
             />

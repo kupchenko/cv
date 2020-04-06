@@ -13,7 +13,7 @@ class ContactInfo extends PureComponent {
     render() {
         return (
             <>
-                <ul className="list-titles contacts-list" style={{padding: "0"}}>
+                <ul className="list-titles no-mark-list" style={{padding: "0"}}>
                     <li><PhoneOutlined/></li>
                     <li><MailOutlined/></li>
                     <li><SkypeOutlined/></li>
@@ -21,7 +21,7 @@ class ContactInfo extends PureComponent {
                     <li><GithubOutlined/></li>
                     <li><LinkedinOutlined/></li>
                 </ul>
-                <ul className="list-content contacts-list" style={{padding: "0"}}>
+                <ul className="list-content no-mark-list" style={{padding: "0"}}>
                     <li>+38(095)499-32-32</li>
                     <li>kupchenko.work@gmail.com</li>
                     <li>Dmitrii Kupchenko</li>
