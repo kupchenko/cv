@@ -1,10 +1,10 @@
 import React, {PureComponent} from 'react';
 import {Layout} from 'antd';
-import PageHeader from "../common/header";
-import PageFooter from "../common/footer";
-import PageContent from "./content";
-import {connect} from "react-redux";
-import {actionDoFetchData} from "@/js/actions/fetch-data";
+import PageHeader from '../common/header';
+import PageFooter from '../common/footer';
+import PageContent from './content';
+import {connect} from 'react-redux';
+import {actionDoFetchData} from '@/js/actions/fetch-data';
 
 const Aux = props => props.children;
 

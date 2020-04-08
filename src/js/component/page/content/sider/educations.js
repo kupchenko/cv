@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {connect} from "react-redux";
+import {connect} from 'react-redux';
 
 class Education extends PureComponent {
 
@@ -11,7 +11,7 @@ class Education extends PureComponent {
             </li>
         });
         return (
-            <ul style={{padding: "0"}} className="no-mark-list">
+            <ul style={{padding: '0'}} className='no-mark-list'>
                 {li}
             </ul>
         )

@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Layout} from "antd";
+import {Layout} from 'antd';
 
 class PageFooter extends PureComponent {
 

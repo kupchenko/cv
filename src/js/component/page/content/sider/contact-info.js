@@ -7,7 +7,7 @@ import {
     PhoneOutlined,
     SkypeOutlined
 } from '@ant-design/icons';
-import {connect} from "react-redux";
+import {connect} from 'react-redux';
 
 class ContactInfo extends PureComponent {
 
@@ -15,7 +15,7 @@ class ContactInfo extends PureComponent {
         const {contacts} = this.props;
         return (
             <>
-                <ul className="list-titles no-mark-list" style={{padding: "0"}}>
+                <ul className='list-titles no-mark-list' style={{padding: '0'}}>
                     <li><PhoneOutlined/></li>
                     <li><MailOutlined/></li>
                     <li><SkypeOutlined/></li>
@@ -23,7 +23,7 @@ class ContactInfo extends PureComponent {
                     <li><GithubOutlined/></li>
                     <li><LinkedinOutlined/></li>
                 </ul>
-                <ul className="list-content no-mark-list" style={{padding: "0"}}>
+                <ul className='list-content no-mark-list' style={{padding: '0'}}>
                     <li>{contacts['phone']}</li>
                     <li>{contacts['email']}</li>
                     <li>{contacts['name']}</li>

@@ -1,7 +1,7 @@
-import React from "react";
-import {List} from "antd";
-import ExperienceRow from "@/js/component/page/content/experience/row";
-import {connect} from "react-redux";
+import React from 'react';
+import {List} from 'antd';
+import ExperienceRow from '@/js/component/page/content/experience/row';
+import {connect} from 'react-redux';
 
 class Experience extends React.Component {
 
@@ -10,8 +10,8 @@ class Experience extends React.Component {
         return (
             <List
                 style={{padding: '0 25px 24px'}}
-                itemLayout="vertical"
-                size="large"
+                itemLayout='vertical'
+                size='large'
                 pagination={{
                     onChange: page => {
                         console.log(page);

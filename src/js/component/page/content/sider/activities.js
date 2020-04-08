@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {connect} from "react-redux";
+import {connect} from 'react-redux';
 
 class Activities extends PureComponent {
 
@@ -7,7 +7,7 @@ class Activities extends PureComponent {
         const {activities} = this.props;
         const li = activities.map(item => <li key={item.id}>{item.name}</li>);
         return (
-            <ul style={{padding: "0"}} className="no-mark-list">
+            <ul style={{padding: '0'}} className='no-mark-list'>
                 {li}
             </ul>
         )

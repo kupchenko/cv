@@ -2,7 +2,7 @@ import {
     CV_DATA_SEARCH_IS_LOADING,
     CV_DATA_SEARCH_LOAD_FAILURE,
     CV_DATA_SEARCH_LOAD_SUCCESS
-} from "@/js/actions/action-type";
+} from '@/js/actions/action-type';
 
 const cvDataInitialState = {
     isLoading: false,

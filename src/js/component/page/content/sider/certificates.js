@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {connect} from "react-redux";
+import {connect} from 'react-redux';
 
 class Certificates extends PureComponent {
 
@@ -8,7 +8,7 @@ class Certificates extends PureComponent {
         const li = certificates.map(item => <li key={item.id}>{item.name}. Issued data: {item.issueDate}</li>);
         return (
             <>
-                <ul style={{padding: "0"}} className="no-mark-list">
+                <ul style={{padding: '0'}} className='no-mark-list'>
                     {li}
                 </ul>
             </>

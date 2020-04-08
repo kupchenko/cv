@@ -1,6 +1,6 @@
-import React from "react";
-import SimpleList from "@/js/component/common/list";
-import {connect} from "react-redux";
+import React from 'react';
+import SimpleList from '@/js/component/common/list';
+import {connect} from 'react-redux';
 
 class Summary extends React.Component {
 

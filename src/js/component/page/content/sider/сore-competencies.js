@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {connect} from "react-redux";
+import {connect} from 'react-redux';
 
 class CoreCompetencies extends PureComponent {
 
@@ -9,7 +9,7 @@ class CoreCompetencies extends PureComponent {
             return <li key={item.id}><b>{item.key}{item.key ? ':' : ''}</b> {item.values.join(', ')}</li>
         });
         return (
-            <ul className="no-mark-list" style={{padding: '0 0 0'}}>
+            <ul className='no-mark-list' style={{padding: '0 0 0'}}>
                 {li}
             </ul>
         )

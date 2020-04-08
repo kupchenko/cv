@@ -30,10 +30,10 @@ const optimization = () => {
 
 module.exports = {
     entry: './js/index.js',
-    context: path.resolve(__dirname, "src"),
+    context: path.resolve(__dirname, 'src'),
     output: {
         path: path.resolve(__dirname, outputFolder),
-        filename: "js/[name].[hash].bundle.js",
+        filename: 'js/[name].[hash].bundle.js',
         publicPath: '/'
     },
     optimization: optimization(),
