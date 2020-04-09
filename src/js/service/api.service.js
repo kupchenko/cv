@@ -3,6 +3,7 @@ import React from "react";
 const data = {
     name: "Dmitrii Kupchenko",
     title: "Senior Software Engineer",
+    avatar: "/src/img/avatar.jpg",
     competencies: [
         {
             id: 1,
