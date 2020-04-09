@@ -11,6 +11,7 @@ import {
 class ContactInfo extends PureComponent {
 
     render() {
+        const {contacts} = this.props;
         return (
             <>
                 <ul className="list-titles no-mark-list" style={{padding: "0"}}>
@@ -22,12 +23,12 @@ class ContactInfo extends PureComponent {
                     <li><LinkedinOutlined/></li>
                 </ul>
                 <ul className="list-content no-mark-list" style={{padding: "0"}}>
-                    <li>+38(095)499-32-32</li>
-                    <li>kupchenko.work@gmail.com</li>
-                    <li>Dmitrii Kupchenko</li>
-                    <li>Kiev, Ukraine</li>
-                    <li><a href="https://github.com/kupchenko">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/dmitrii-kupchenko/">LinkedIn Profile</a></li>
+                    <li>{contacts['phone']}</li>
+                    <li>{contacts['email']}</li>
+                    <li>{contacts['name']}</li>
+                    <li>{contacts['location']}</li>
+                    <li><a href={contacts['github']}>GitHub</a></li>
+                    <li><a href={contacts['linkedin']}>LinkedIn Profile</a></li>
                 </ul>
             </>
         )

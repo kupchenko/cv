@@ -31,7 +31,7 @@ class ExperienceRow extends React.Component {
     render() {
         const {title, position, description, startDate, endDate, company, tasks, technologies, benefits} = this.props.project;
         const contentList = {
-            tasks: <ul className="circle-list">{tasks.map(task => <li>{task}</li>)}</ul>,
+            tasks: <ul className="circle-list">{tasks.map(task => <li key={task}>{task}</li>)}</ul>,
             tech: technologies.join(', '),
             description: <div>{description}<br/>{benefits}</div>,
         };

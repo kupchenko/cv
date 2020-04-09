@@ -1,29 +1,26 @@
 import React, {PureComponent} from 'react';
-import {Divider, Layout} from "antd";
+import {Empty, Layout} from "antd";
 import PageSider from "./sider";
-import Experience from "@/js/component/page/content/experience";
-import Summary from "@/js/component/page/content/summary";
+import {connect} from "react-redux";
+import MainContent from "@/js/component/page/content/main";
 
 const {Content} = Layout;
 
 class PageContent extends PureComponent {
 
     render() {
+        let content = <Empty/>;
+        if (this.props.cvData.data) {
+            const {name, title, summary, projects} = this.props.cvData.data;
+            content = <MainContent name={name} title={title} summary={summary} projects={projects}/>;
+        }
+
         return (
             <Content style={{padding: '0 200px'}}>
                 <Layout style={{padding: '24px 0'}}>
-                    <PageSider/>
+                    <PageSider data={this.props.cvData.data}/>
                     <Content className="site-layout-background" style={{marginLeft: '10px', minHeight: 1000}}>
-
-                        <div className="employee-name">Dmitrii Kupchenko</div>
-                        <div className="employee-title">Senior Software Engineer</div>
-
-                        <Divider orientation="left">Summary</Divider>
-                        <Summary/>
-
-                        <Divider orientation="left">Experience</Divider>
-                        <Experience/>
-
+                        {content}
                     </Content>
                 </Layout>
             </Content>
@@ -31,4 +28,8 @@ class PageContent extends PureComponent {
     }
 }
 
-export default PageContent;
+const mapStateToProps = (state) => ({
+    cvData: state.cvData
+});
+
+export default connect(mapStateToProps)(PageContent);
