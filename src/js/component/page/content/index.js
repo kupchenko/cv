@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {Empty, Layout} from "antd";
+import {Layout, Spin} from "antd";
 import PageSider from "./sider";
 import {connect} from "react-redux";
 import MainContent from "@/js/component/page/content/main";
@@ -9,10 +9,13 @@ const {Content} = Layout;
 class PageContent extends PureComponent {
 
     render() {
-        let content = <Empty/>;
-        if (this.props.cvData.data) {
-            const {name, title, summary, projects} = this.props.cvData.data;
-            content = <MainContent name={name} title={title} summary={summary} projects={projects}/>;
+        let content = (
+            <div className="spinner">
+                <Spin size="large"/>
+            </div>
+        );
+        if (!this.props.isLoading) {
+            content = <MainContent/>;
         }
 
         return (
@@ -29,7 +32,7 @@ class PageContent extends PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-    cvData: state.cvData
+    isLoading: state.cvData.isLoading
 });
 
 export default connect(mapStateToProps)(PageContent);

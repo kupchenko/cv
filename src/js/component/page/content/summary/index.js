@@ -7,7 +7,6 @@ class Summary extends React.Component {
     render() {
         const {summary} = this.props;
         return (<SimpleList data={summary}/>)
-
     }
 }
 

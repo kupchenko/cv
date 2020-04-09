@@ -3,7 +3,6 @@ import React from "react";
 const data = {
     name: "Dmitrii Kupchenko",
     title: "Senior Software Engineer",
-    skills: [],
     competencies: [
         {
             id: 1,
