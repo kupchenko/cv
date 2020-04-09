@@ -1,4 +1,5 @@
 import React, {PureComponent} from 'react';
+import {connect} from "react-redux";
 
 class CoreCompetencies extends PureComponent {
 
@@ -15,4 +16,8 @@ class CoreCompetencies extends PureComponent {
     }
 }
 
-export default CoreCompetencies;
+const mapStateToProps = (state) => ({
+    competencies: state.cvData.data.competencies
+});
+
+export default connect(mapStateToProps)(CoreCompetencies);

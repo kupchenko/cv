@@ -1,4 +1,5 @@
 import React, {PureComponent} from 'react';
+import {connect} from "react-redux";
 
 class Certificates extends PureComponent {
 
@@ -14,5 +15,8 @@ class Certificates extends PureComponent {
         )
     }
 }
+const mapStateToProps = (state) => ({
+    certificates: state.cvData.data.certificates
+});
 
-export default Certificates;
+export default connect(mapStateToProps)(Certificates);

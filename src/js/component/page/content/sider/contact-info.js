@@ -7,6 +7,7 @@ import {
     PhoneOutlined,
     SkypeOutlined
 } from '@ant-design/icons';
+import {connect} from "react-redux";
 
 class ContactInfo extends PureComponent {
 
@@ -35,4 +36,8 @@ class ContactInfo extends PureComponent {
     }
 }
 
-export default ContactInfo;
+const mapStateToProps = (state) => ({
+    contacts: state.cvData.data.contacts
+});
+
+export default connect(mapStateToProps)(ContactInfo);

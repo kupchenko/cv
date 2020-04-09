@@ -9,23 +9,22 @@ import CoreCompetencies from "@/js/component/page/content/sider/сore-competenci
 class CardContent extends PureComponent {
 
     render() {
-        const {competencies, contacts, activities, education, certificates} = this.props.data;
         return (
             <>
                 <Divider orientation="center">Core competencies</Divider>
-                <CoreCompetencies competencies={competencies}/>
+                <CoreCompetencies/>
 
                 <Divider orientation="center">Contact info</Divider>
-                <ContactInfo contacts={contacts}/>
+                <ContactInfo/>
 
                 <Divider orientation="center">Certificates</Divider>
-                <Certificates certificates={certificates}/>
+                <Certificates/>
 
                 <Divider orientation="center">Education</Divider>
-                <Education education={education}/>
+                <Education/>
 
                 <Divider orientation="center">Other activities</Divider>
-                <Activities activities={activities}/>
+                <Activities/>
             </>
         )
     }

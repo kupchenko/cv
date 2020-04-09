@@ -1,6 +1,7 @@
 import React from "react";
 import {List} from "antd";
 import ExperienceRow from "@/js/component/page/content/experience/row";
+import {connect} from "react-redux";
 
 class Experience extends React.Component {
 
@@ -34,5 +35,8 @@ class Experience extends React.Component {
     }
 }
 
+const mapStateToProps = (state) => ({
+    projects: state.cvData.data.projects
+});
 
-export default Experience;
+export default connect(mapStateToProps)(Experience);

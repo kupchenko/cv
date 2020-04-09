@@ -1,4 +1,5 @@
 import React, {PureComponent} from 'react';
+import {connect} from "react-redux";
 
 class Education extends PureComponent {
 
@@ -18,5 +19,8 @@ class Education extends PureComponent {
         )
     }
 }
+const mapStateToProps = (state) => ({
+    education: state.cvData.data.education
+});
 
-export default Education;
+export default connect(mapStateToProps)(Education);

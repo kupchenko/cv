@@ -18,7 +18,7 @@ class PageContent extends PureComponent {
         return (
             <Content style={{padding: '0 200px'}}>
                 <Layout style={{padding: '24px 0'}}>
-                    <PageSider data={this.props.cvData.data}/>
+                    <PageSider/>
                     <Content className="site-layout-background" style={{marginLeft: '10px', minHeight: 1000}}>
                         {content}
                     </Content>
