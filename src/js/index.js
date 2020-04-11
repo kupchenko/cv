@@ -14,8 +14,8 @@ const store = configureStore();
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-            <Route exact path="/" component={Page}/>
-            <Route exact path="/profile" component={Page}/>
+            <Route exact path='/' component={Page}/>
+            <Route exact path='/profile' component={Page}/>
         </BrowserRouter>
     </Provider>,
     document.getElementById('container')

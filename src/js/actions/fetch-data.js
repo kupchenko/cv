@@ -24,7 +24,7 @@ export const actionDoFetchData = () => {
     return (dispatch) => {
         dispatch(actionDataFetchIsLoading());
 
-        ApiService.fetch(`/url`, {}).then((data) => {
+        ApiService.fetch(`/cv`, {}).then((data) => {
             dispatch(actionDataFetchSuccess(data));
         }).catch((errors) => {
             dispatch(actionDataFetchFailure(errors));

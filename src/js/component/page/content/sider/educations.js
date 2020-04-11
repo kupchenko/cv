@@ -11,11 +11,9 @@ class Education extends PureComponent {
             </li>
         });
         return (
-
             <ul style={{padding: "0"}} className="no-mark-list">
                 {li}
             </ul>
-
         )
     }
 }
